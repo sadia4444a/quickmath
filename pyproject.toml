@@ -32,10 +32,10 @@ dev = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/you/quickmath"
-Repository = "https://github.com/you/quickmath"
-Documentation = "https://github.com/you/quickmath#readme"
-"Bug Tracker" = "https://github.com/you/quickmath/issues"
+Homepage = "https://github.com/sadia4444a/quickmath"
+Repository = "https://github.com/sadia4444a/quickmath"
+Documentation = "https://github.com/sadia4444a/quickmath#readme"
+"Bug Tracker" = "https://github.com/sadia4444a/quickmath/issues"
 
 [project.scripts]
 quickmath = "quickmath.cli:main"      # terminal command → function
