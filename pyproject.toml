@@ -1,0 +1,44 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.backends.legacy:build"
+
+[project]
+name = "quickmath"                    # unique on PyPI
+version = "0.1.0"                     # semver
+description = "Simple math CLI tool written in Python"
+readme = "README.md"                  # shows on PyPI page
+license = {text = "Apache-2.0"}
+authors = [
+    {name = "Sadia Khatun", email = "sadiasultana4444a@gmail.com"}
+]
+keywords = ["math", "cli", "calculator"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: OS Independent",
+    "Environment :: Console",
+]
+requires-python = ">=3.8"
+dependencies = [
+    # add your pip dependencies here
+    # "requests>=2.28.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0",
+    "build",
+    "twine",
+]
+
+[project.urls]
+Homepage = "https://github.com/you/quickmath"
+Repository = "https://github.com/you/quickmath"
+Documentation = "https://github.com/you/quickmath#readme"
+"Bug Tracker" = "https://github.com/you/quickmath/issues"
+
+[project.scripts]
+quickmath = "quickmath.cli:main"      # terminal command → function
+
+[tool.setuptools.packages.find]
+where = ["src"]
